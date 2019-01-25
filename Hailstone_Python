@@ -1,1 +1,13 @@
+Sequences of integers generated in the Collatz problem. 
 
+For example, for a starting number of 7, the sequence is 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1, 4, 2, 1, .... 
+
+Such sequences are called hailstone sequences because the values typically rise and fall, 
+
+somewhat analogously to a hailstone inside a cloud.
+
+While a hailstone eventually becomes so heavy that it falls to ground, 
+
+every starting positive integer ever tested has produced a hailstone sequence that eventually drops down to the number 1 
+
+and then "bounces" into the small loop 4, 2, 1, ....
