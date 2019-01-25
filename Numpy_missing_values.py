@@ -14,7 +14,9 @@ df
 df.columns[df.isna().any()].tolist()
 
 ##groupby and find Ratio
-df.groupby(['native-country', 'Salary']).get_group((' United-States', 'Salary <=50K'))/df.groupby(['native-country', 'Salary']).get_group((' United-States', 'Salary >50K'))
+df.groupby(['native-country','Salary'])[["native-country"]].get_group((' United-States',' <=50K')).count()/df.groupby(['native-country','Salary'])[["native-country"]].get_group((' United-States',' >50K')).count()
+
+
 
 ## groupby cars by cylinders. What is the average horsepower for 4 and 6 cylinders vehicles
 df.horsepower = df.horsepower.astype(float)
