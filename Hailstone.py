@@ -1,3 +1,12 @@
+for n in range(1,10):
+    while n > 1:
+        count = 0
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = ((n * 3) + 1)
+        print(n)
+        count += 1
 #Method to calculate hailstone number 
 outp = [0]
 for x_init in range(1,101):
