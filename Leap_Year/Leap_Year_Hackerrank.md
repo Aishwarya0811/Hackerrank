@@ -1,5 +1,5 @@
 
-Write a function
+Write a function -
 
 
 We add a Leap Day on February 29, almost every four years. The leap day is an extra, or intercalary day and we add it to the shortest month of the year, February. 
