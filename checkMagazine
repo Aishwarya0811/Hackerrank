@@ -1,0 +1,50 @@
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the checkMagazine function below.
+
+dic_1 ={}
+dic_2 ={}
+result = []
+def checkMagazine(magazine, note):
+    for word in magazine:
+        if word in dic_1.keys():
+            dic_1[word]+=1
+        else:
+            dic_1[word] = 1
+    for word in note:
+        if word in dic_2.keys():
+            dic_2[word]+=1
+        else:
+            dic_2[word] = 1
+    for word in dic_2.keys():
+        if word in dic_1.keys():
+            if dic_1[word]< dic_2[word]:
+                result.append(False)
+            else:
+                result.append(True)
+        else:
+            result.append(False)
+    if False in result:
+        print("No")
+    else:
+        print("Yes")
+    
+    
+    
+
+if __name__ == '__main__':
+    mn = input().split()
+
+    m = int(mn[0])
+
+    n = int(mn[1])
+
+    magazine = input().rstrip().split()
+
+    note = input().rstrip().split()
+
+    checkMagazine(magazine, note)
